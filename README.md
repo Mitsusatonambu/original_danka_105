@@ -18,8 +18,8 @@
 |------------------|-----------------|-------------------------------|
 
 ### Association
-has_one :reservation
-belongs_to :customer
+has_one :reservation,
+belongs_to :customer,
 belongs_to :admin
 
 
@@ -42,8 +42,8 @@ belongs_to :admin
 |------------------|-----------------|-----------------------------------------|
 
 ### Association
-has_many :users
-has_many :customers
+has_many :users,
+has_many :customers,
 has_many :reservations
 
 
@@ -59,8 +59,8 @@ has_many :reservations
 
 
 ### Association
-belongs_to :user
-belongs_to :admin
+belongs_to :user,
+belongs_to :admin,
 belongs_to :customer
 
 
@@ -73,7 +73,7 @@ belongs_to :customer
 |cemetery_type_id |integer          |null :false                              |
 |cost             |integer          |null :false                              |
 |cost_pay_id      |integer          |null :false                              |
-|admins_id        |references       |null :false foreign_key :true            |
+|admins           |references       |null :false foreign_key :true            |
 |                 |                 |                                         |
 |                 |                 |                                         |
 |                 |                 |                                         |
@@ -83,6 +83,6 @@ belongs_to :customer
 
 
 ### Association
-belongs_to :admin
-has_one :user
+belongs_to :admin,
+has_one :user,
 has_one :reservation
