@@ -18,8 +18,8 @@
 |------------------|-----------------|-------------------------------|
 
 ### Association
-has_one :reservation
-belongs_to :customer
+has_one :reservation <br>
+belongs_to :customer <br>
 belongs_to :admin
 
 
@@ -42,9 +42,9 @@ belongs_to :admin
 |------------------|-----------------|-----------------------------------------|
 
 ### Association
-has_many :users
-has_many :customers
-has_many :reservations
+has_many :users <br>
+has_many :customers <br>
+has_many :reservations 
 
 
 ## reservations
@@ -59,8 +59,8 @@ has_many :reservations
 
 
 ### Association
-belongs_to :user
-belongs_to :admin
+belongs_to :user <br>
+belongs_to :admin <br>
 belongs_to :customer
 
 
@@ -83,6 +83,6 @@ belongs_to :customer
 
 
 ### Association
-belongs_to :admin
-has_one :user
+belongs_to :admin <br>
+has_one :user <br>
 has_one :reservation
